@@ -3,15 +3,12 @@ layout: default
 title: Pharmacy 4010Y - Learning Enhancement Team
 ---
 
-<div class="content">
-    # Welcome to Pharmacy Calculations Practice
-    <h2 class="sub-heading">LLE - Mathematics & Statistics</h2>
-</div>
+# Welcome to Pharmacy Calculations Practice
+<h2 class="sub-heading">LLE - Mathematics & Statistics</h2>
 
+## Learning Enhancement Workshops
+<p>Use the following links to go to the LET workshops.</p>
 <div class="topic-section">
-    ## Learning Enhancement Workshops
-    <p>Use the following links to go to the LET workshops.</p>
-
     <div class="topic-link-container">
         <a href="{{ site.baseurl }}/workshops/1.html" class="topic-link">
             <i class="fas fa-calculator topic-icon"></i>
@@ -44,10 +41,9 @@ title: Pharmacy 4010Y - Learning Enhancement Team
     </div>
 </div>
 
+## Further Topic Based Practice
+<p>Below you will find links to questions on individual topics.</p>
 <div class="topic-section">
-    ## Further Topic Based Practice
-    <p>Below you will find links to questions on individual topics.</p>
-
     <div class="topic-link-container">
         <a href="{{ site.baseurl }}/unit_conv/q.html" class="topic-link">
             <i class="fas fa-ruler-combined topic-icon"></i>
@@ -115,10 +111,9 @@ title: Pharmacy 4010Y - Learning Enhancement Team
     </div>
 </div>
 
+## Review Exercises
+<p>Below you will find links to comprehensive review exercises.</p>
 <div class="topic-section">
-    ## Review Exercises
-    <p>Below you will find links to comprehensive review exercises.</p>
-
     <div class="topic-link-container">
         <a href="{{ site.baseurl }}/review/1.html" class="topic-link">
             <i class="fas fa-book-open topic-icon"></i>
@@ -144,9 +139,9 @@ title: Pharmacy 4010Y - Learning Enhancement Team
     </div>
 </div>
 
+## Exam Preparation Questions
+<p>Practice with exam style questions.</p>
 <div class="topic-section">
-    ## Exam Preparation Questions
-    <p>Practice with exam style questions.</p>
     <div class="topic-link-container">
         <a href="{{ site.baseurl }}/examprep/pha01.html" class="topic-link">
             <i class="fas fa-file-alt topic-icon"></i>
@@ -181,9 +176,9 @@ title: Pharmacy 4010Y - Learning Enhancement Team
     </div>
 </div>
 
+## Random Question Generator
+<p>Generate random new practice questions</p>
 <div class="topic-section">
-    ## Random Question Generator
-    <p>Generate random new practice questions</p>
     <div class="topic-link-container">
         <a href="https://sites.google.com/view/phagen" target="_blank" class="topic-link">
             <i class="fas fa-dice topic-icon"></i>
