@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    
+    <!-- Link to your main stylesheet (style.css) -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    
+    <!-- Font Awesome for icons (keep this link if you use Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- MathJax for LaTeX rendering -->
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            options: {
+                scale: 1.1
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+</head>
+<body>
+    <!-- Fixed Navigation Bar (Example - adjust links as needed) -->
+    <div class="navbar">
+        <a href="{{ site.baseurl }}/index.html" class="navbar-title">Pharmacy 4010Y - Learning Enhancement Team</a>
+    </div>
+
+    <div class="content">
+        {{ content }} <!-- This is where your Markdown content will be inserted -->
+    </div>
+
+</body>
+</html>
