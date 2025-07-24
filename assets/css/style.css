@@ -1,5 +1,3 @@
-/* style.css */
-
 html, body { /* Ensure no default margins/paddings on html and body */
     margin: 0;
     padding: 0;
@@ -21,20 +19,67 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 1000; /* Ensure navbar stays on top */
     display: flex;
-    justify-content: flex-start; /* Align title to the start */
+    justify-content: flex-start; /* Align items to the start */
     align-items: center;
     padding: 20.5px 20px; /* Adjusted vertical padding to match other pages' navbar height */
     box-sizing: border-box; /* Include padding in width */
 }
-.navbar-title {
+
+/* --- START: Navigation Link Styles --- */
+
+/* Styles for links in EXISTING HTML files (e.g., pha01.html, pha01_s.html) */
+/* These target <a> tags directly inside .navbar */
+.navbar a {
+    float: left; /* Keep float for old structure if needed, or adjust to flex */
+    display: block;
     color: black; /* Changed text color to black */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 8px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin-right: 10px; /* Space between links */
+}
+.navbar a:hover {
+    background-color: #5cb85c; /* Lighter green on hover */
+    color: black; /* Ensure text remains black on hover */
+}
+
+/* Styles for links in NEW Jekyll-processed Markdown files */
+/* These target <a> tags specifically given the .navbar-link class in _layouts/default.html */
+.navbar-link {
+    /* Note: Many properties are similar to .navbar a, but this class ensures explicit targeting */
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Space between links */
+}
+.navbar-link:hover {
+    background-color: #5cb85c;
+    color: black;
+}
+
+/* Styles for the main page title in the navbar */
+.navbar-title {
+    color: black;
     font-size: 24px;
     font-weight: bold;
-    text-decoration: none; /* Remove underline from title link */
-    flex-grow: 1; /* Make the title take up all available space */
-    text-align: center; /* Center the text within the expanded title area */
-    padding: 0; /* Reset specific padding on title to let flexbox manage */
+    text-decoration: none;
+    padding: 0;
+    margin-left: 10px; /* Space after links */
+    flex-grow: 1; /* Allow title to take up remaining space */
+    text-align: center; /* Center the title within its available space */
 }
+
+/* --- END: Navigation Link Styles --- */
+
+
 .content {
     margin: 20px auto; /* Center content with auto margins */
     max-width: 800px; /* Max width for readability */
@@ -49,6 +94,46 @@ h1, h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+strong {
+    font-weight: bold;
+}
+.instructions, .formulae {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px; /* Rounded corners for info boxes */
+}
+ol {
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 40px; /* Increased padding for the whole list */
+}
+ol li {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 2.5em; /* Space for the counter and a gap */
+}
+ol > li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    position: absolute;
+    left: 0; /* Position relative to the li's padding-box */
+    font-weight: bold;
+    text-align: right; /* Align numbers to the right within their space */
+    width: 2em; /* Give numbers a fixed width */
+}
+ul { /* Style for unordered lists, specifically for formula items */
+    list-style-type: disc;
+    margin-left: 20px; /* Indent for nested ul */
+    padding-left: 0;
+}
+ul li {
+    margin-bottom: 5px;
+}
+
+
 /* New style for the specific sub-heading */
 .sub-heading {
     font-size: 1.4em; /* Slightly smaller than default h2 */
@@ -62,6 +147,7 @@ p {
     margin-bottom: 30px;
     font-size: 1.1em;
 }
+
 /* The original .button-container and .button styles are no longer needed for pha links,
    but kept here in case they are used elsewhere or for reference.
    The pha links will now use topic-link-container and topic-link styles. */
