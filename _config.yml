@@ -1,0 +1,17 @@
+title: LET Attendance Dashboard Guide
+description: Accessible user guide for the LET Attendance Dashboard, version 4.0.0
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+header_pages:
+  - getting-started.md
+  - home-screen.md
+  - drop-ins.md
+  - retreats.md
+  - workshops.md
+  - tools.md
+  - analysis.md
+  - troubleshooting.md
+minima:
+  skin: classic
